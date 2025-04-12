@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/* formatação de texto*/
+h1{
+    font-family: arial;
+    font-size: 30px;
+    color: hsla(0, 0%, 100%, 0.934);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.648);
+    background-color: rgb(9, 65, 139);
+    text-align: center;
+    text-indent: 30px;
+    padding: 20px;
+    border:solid 2px black;
+    box-shadow: 4px 4px 4px #000000;
+    height: 40px;
+    border-radius: 8px;
+}
+
+form{
+    background-color: rgb(9, 65, 139);
+    border: solid 2px #000000;
+    box-shadow: 4px 4px 4px #000000;
+    color: #dedddd;
+    width: 300px;
+    margin:auto;
+    border-radius: 8px;
+    
+}
+.campo{
+    font-size: 20px;
+    padding: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    
+}
+label{
+   margin-left: 15px;
+}
+
+.resetar{
+    background-color: #4c9eaf;; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 32px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    border: 2px 2px; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: 1s;
+}
+
+.calcular {
+    background-color: #4c9eaf; /* Cor de fundo */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    padding: 10px 32px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    border: 2px 2px; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: 1s;
+}
+.resetar:hover{
+    background-color:aqua;
+    text-decoration: underline ;
+}
+.calcular:hover{
+    background-color:aqua;
+    text-decoration: underline ;
+}
+
+
+body.home{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg,rgb(4, 4, 53),rgb(146, 0, 0));
+}
+body.calculadora{
+  
+    background-color: #dedddd;
+    background-image: url(../imagem/coroaepiao.jpg);
+}
+body.quemsomos{
+  
+    background-color: #dedddd;
+    background-image: url(../imagem/pngtree-beautiful-woman-riding-a-motorcycle-at-dusk-image_808369.jpg);
+}
+
+p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   text-align: justify;
+   color: #000000;
+   background: rgba(255, 255, 255, 0.7);
+   padding: 10px;
+   margin: 10px;
+   text-indent: 30px;
+   border-radius: 8px;
+}
+
+a.voltar{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(9, 65, 139);
+    padding: 10px;
+    color: #dedddd;
+    box-shadow: 2px 2px 2px black;
+    border: solid black;
+    transition: 1s;
+    text-decoration: none;
+    border-radius: 8px;
+}
+a.voltar:hover{
+    background-color:aqua;
+    text-decoration: underline ;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+/* Formatação do Menu de Navegaçãp */
+
+nav#menu {
+    display: block;
+    margin-top: 30px;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left:40px;
+    
+}
+nav#menu li {
+    display: inline-block;
+    background-color: rgb(9, 65, 139);
+    padding: 10px;
+    margin: 2px;
+    transition: 1s;
+    border: solid 2px #030202;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 8px;
+}
+nav#menu li:hover {
+    background-color: aqua;
+    transform: scale(1.2);
+    transition: 1s;
+
+}
+
+nav#menu h1 {
+    display: none;
+}
+nav#menu a {
+    color: rgb(251, 246, 246);
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: blanchedalmond;
+    text-decoration: underline;
+}
+
+header#cabecalho {
+    border-bottom: 5px #cbd10c solid;
+    height: 150px;
+}

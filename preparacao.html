@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule Sua Preparação</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
+    <script src="script/calculadora.js"></script>
+</head>
+
+<body class = "calculadora">
+    
+    <h1>Calcule Sua Preparação</h1>
+    <div>
+      <a href="index.html" class ="voltar" >Voltar</a>
+    </div>
+    <p>Esta calculadora foi desenvolvida para ajudá-lo a otimizar o desempenho e a velocidade da sua motocicleta, fornecendo dados precisos para ajustes e melhorias.</p>
+   <form oninput="calc_total();">
+    <div>
+         <label for="piorig">Pião Original</label>
+        </div>
+         <div>
+        <input type="number" id = "piorig" required class="campo" min="0" max="100"/>
+    </div>
+    <div>
+        <label for="cororig">Coroa Original</label>
+    </div>
+    <div>
+        <input type="number" id = "cororig" required class="campo" min="0" max="100"/>
+    </div>
+    <div>
+        <label for="velorig" >Velocidade Maxima Original</label>
+    </div>
+    <div>
+    <div>
+        <input type="number" id = "velorig" required class="campo" min="0" />
+    </div>
+    <div>
+        <label for="piaoat" >Pião Alterado</label>
+    </div>
+    <div>
+        <input type="number" id = "piaoat" required class="campo" min="0" max="100"/>
+    </div>
+
+     <div>
+        <label for="corat" >Coroa Alterada</label>
+     </div>
+     <div>
+        <input type="number" id = "corat" required class="campo" min="0" max="100"/>
+     </div>
+     <div>
+        <label for="velat" >Velocidade c/as Alterações</label>
+     </div>
+    <div>
+        <input type="number" id = "velat" class="campo" min="0"/>
+    </div>
+    <div>
+        <input type="reset" value="Limpar" class ="resetar"/>
+    </div>
+   </form>
+    
+</body>
+</html>
