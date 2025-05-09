@@ -5,19 +5,24 @@ h1{
     font-family: arial;
     font-size: 30px;
     color: hsla(0, 0%, 100%, 0.934);
+    background-color: rgb(2, 75, 171);
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.648);
-    background-color: rgb(9, 65, 139);
     text-align: center;
     text-indent: 30px;
     padding: 20px;
-    border:solid 2px black;
-    box-shadow: 4px 4px 4px #000000;
     height: 40px;
     border-radius: 8px;
+    margin-top: 80px;
+}
+header{
+    margin-top: -50px;
+    background-color: rgb(9, 65, 139);
+    padding: 20px;
+
 }
 
 form{
-    background-color: rgb(9, 65, 139);
+    background-color: rgb(2, 75, 171);
     border: solid 2px #000000;
     box-shadow: 4px 4px 4px #000000;
     color: #dedddd;
@@ -75,12 +80,12 @@ label{
 body.home{
   
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(45deg,rgb(4, 4, 53),rgb(146, 0, 0));
+    background-image: #fff;
 }
 body.calculadora{
   
     background-color: #dedddd;
-    background-image: url(../imagem/coroaepiao.jpg);
+    background-image: url(../imagem/Manutenção-da-corrente-de-moto-a-importância-para-o-conjunto-de-transmissão-secundária.jpg);
 }
 body.quemsomos{
   
@@ -137,18 +142,18 @@ nav#menu li {
     display: inline-block;
     background-color: rgb(9, 65, 139);
     padding: 10px;
-    margin: 2px;
+    margin: 0px;
     transition: 1s;
-    border: solid 2px #030202;
-    box-shadow: 4px 4px 4px black;
+    border: none;
+    box-shadow: none;
     border-radius: 8px;
 }
-nav#menu li:hover {
+/*nav#menu li:hover {
     background-color: aqua;
     transform: scale(1.2);
     transition: 1s;
 
-}
+}*/
 
 nav#menu h1 {
     display: none;
@@ -163,6 +168,6 @@ nav#menu a:hover{
 }
 
 header#cabecalho {
-    border-bottom: 5px #cbd10c solid;
+    border-bottom: 5px gray solid;
     height: 150px;
 }

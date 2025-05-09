@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontros</title>
+</head>
+<body>
+    <h1>Agendamento de Econtros</h1>
+
+    <a href="{% url 'incluir_passeios' %}">Incluir</a>
+    <table>
+    <thead>
+    
+    
+           <tr>
+                <td>Data do Passeio</td>
+                <td>Destino</td>
+                <td>Horario de Partida</td>
+                <td>Local de Partida</td>
+                <td>Nome do Oganizador</td>
+                <td>Telefone</td>
+                <td>Grupo do Whatsapp</td>
+                <td>Ações</td>
+           </tr>
+    
+    </thead>
+    <tbody>
+        {% for l in passeios %}
+        <tr>
+            <td>{{l.DataPasseio}}</td>
+            <td>{{l.destino}}</td>
+            <td>{{l.horarioPartida}}</td>
+            <td>{{l.localPartida}}</td>
+            <td>{{l.nome}}</td>
+            <td>{{l.telefone}}</td>
+            <td>{{l.grupoWhats}}</td>
+            <td><a href="{% url 'alterar_passeio' l.id %}">Alterar</a>
+                <a href="{% url 'excluir_passeio' l.id %} " onclick='return excluir()'>Excluir</a>
+            </td>
+        
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</body>
+<script>
+    function excluir(){
+        return confirm("Deseja Excluir?");
+    }
+</script>
+</html>
