@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
+<link rel="stylesheet" href="{% static 'estilo/estilo.css' %}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encontros</title>
 </head>
-<body>
+<body class="passeio">
+    {% include 'btn_pagina_inicial.html' %}
     <h1>Agendamento de Econtros</h1>
-
-    <a href="{% url 'incluir_passeios' %}">Incluir</a>
-    <table>
+    <table class="tabela-passeio">
     <thead>
     
     
@@ -43,6 +44,8 @@
         {% endfor %}
     </tbody>
     </table>
+<a href="{% url 'incluir_passeios' %}" class="agendar">Agendar Passeio</a>
+
 </body>
 <script>
     function excluir(){

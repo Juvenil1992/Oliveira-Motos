@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+/* formatação de texto*/
+/*FORMATAÇÃO DA PAGINA INDEX*/
+
+
+body.home{
+  
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: #fff;
+}
+
+
+
+p{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   text-align: left;
+   color: #000000;
+   background: rgba(255, 255, 255, 0.7);
+   padding: 10px;
+   margin: 10px;
+   text-indent: 30px;
+   border-radius: 8px;
+}
+
+h1{
+    font-family: arial;
+    font-size: 30px;
+    color: hsla(0, 0%, 100%, 0.934);
+    background-color: rgb(2, 75, 171);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.648);
+    text-align: center;
+    text-indent: 30px;
+    padding: 20px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 80px;
+}
+header{
+    margin-top: -50px;
+    background-color: rgb(9, 65, 139);
+    padding: 20px;
+
+}
+
+/*FORMATAÇÃO DA PAGINA CALCULADORA*/
+form.calculadora{
+    background-color: rgb(2, 75, 171);
+    border: solid 2px #000000;
+    box-shadow: 4px 4px 4px #000000;
+    color: #dedddd;
+    width: 300px;
+    height: 400px;
+    margin:auto;
+    border-radius: 8px;
+    
+}
+
+.resetar{
+    background-color: #4c9eaf; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 10px 32px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 6px 2px; /* Margem */
+    border: 2px 2px; /* Sem borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: 1s;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+
+    
+}
+
+.resetar:hover{
+    background-color:aqua;
+}
+
+body.calculadora{
+  
+    background-color: #dedddd;
+    background-image: url(../imagem/Manutenção-da-corrente-de-moto-a-importância-para-o-conjunto-de-transmissão-secundária.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;         /* Faz a imagem cobrir toda a tela */
+    background-position: center;    /* Centraliza a imagem */
+    height: 100vh;                  /* Garante que o body ocupe a altura da tela */
+    margin: 0;  
+
+    
+}
+
+/*FORMATAÇÃO DA PAGINA PASSEIO*/
+
+body.passeio{
+  
+    background-color: #dedddd;
+    background-image: url(../imagem/pngtree-beautiful-woman-riding-a-motorcycle-at-dusk-image_808369.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         /* Faz a imagem cobrir toda a tela */
+    background-position: center;    /* Centraliza a imagem */
+    height: 100vh;                  /* Garante que o body ocupe a altura da tela */
+    margin: 0;  
+
+}
+
+.tabela-passeio {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+.tabela-passeio thead {
+  background-color: #003366; /* azul escuro */
+  color: white;
+  text-align: center;
+}
+
+.tabela-passeio th, .tabela-passeio td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.tabela-passeio tbody {
+  background-color: white;
+}
+
+.tabela-passeio tbody tr:hover {
+  background-color: #f0f8ff; /* leve azul ao passar o mouse */
+}
+
+a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+}
+.campo{
+    font-size: 20px;
+    padding: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    
+}
+label{
+   margin-left: 15px;
+}
+
+a.agendar{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(9, 65, 139);
+    padding: 10px;
+    color: #dedddd;
+    box-shadow: 2px 2px 2px black;
+    border: solid black;
+    transition: 1s;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+a.agendar:hover{
+    background-color:aqua;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+form.agendar {
+    background-color: rgb(2, 75, 171);
+    border: solid 2px #000000;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    max-width: 500px;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 12px;
+    padding: 30px 40px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+form.agendar label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form.agendar input[type="text"],
+form.agendar input[type="time"],
+form.agendar input[type="date"],
+form.agendar input[type="submit"],
+form.agendar input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+form.agendar input[type="submit"],
+form.agendar input[type="reset"] {
+    background-color: #fff;
+    color: rgb(2, 75, 171);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+form.agendar input[type="submit"]:hover,
+form.agendar input[type="reset"]:hover {
+    background-color: #ddd;
+}
+
+a.voltar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgb(2, 75, 171);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+a.voltar:hover {
+    background-color: #004b9a;
+}
+
+
+
+/* Formatação Página Quem Somos */
+
+body.quemsomos{
+  
+    background-color: #dedddd;
+    background-image: url(../imagem/pngtree-beautiful-woman-riding-a-motorcycle-at-dusk-image_808369.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;         /* Faz a imagem cobrir toda a tela */
+    background-position: center;    /* Centraliza a imagem */
+    height: 100vh;                  /* Garante que o body ocupe a altura da tela */
+    margin: 0;  
+}
+
+
+
+
+
+/* Formatação do Menu de Navegação */
+
+nav#menu {
+    display: block;
+    margin-top: 30px;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left:40px;
+    
+}
+nav#menu li {
+    display: inline-block;
+    background-color: rgb(9, 65, 139);
+    padding: 10px;
+    margin: 0px;
+    transition: 1s;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+nav#menu h1 {
+    display: none;
+}
+nav#menu a {
+    color: rgb(251, 246, 246);
+    text-decoration: none;
+}
+nav#menu a:hover{
+    color: rgb(196, 119, 4);
+    text-decoration: none;
+}
+
+header#cabecalho {
+    border-bottom: 5px gray solid;
+    height: 150px;
+}
+
+a.voltar{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(9, 65, 139);
+    padding: 10px;
+    color: #dedddd;
+    box-shadow: 2px 2px 2px black;
+    border: solid black;
+    transition: 1s;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+a.voltar:hover{
+    background-color:aqua;
+    transform: scale(1.1);
+    transition: 1s;
+}

@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos </title>
-    <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
+    <link rel="stylesheet" href="{% static 'estilo/estilo.css' %}">
 </head>
 <body class="quemsomos">
         
@@ -14,17 +15,16 @@
         E foi essa paixão que nos levou a fechar várias parcerias iradas, reunindo tudo em um só lugar pra você!&#128640;<br><br><br>
         </p>
          <div>
-        <img src="imagem/JetMotos.jpg" width="100"/>
-        <img src="imagem/Pirelli.png" width="200"/>
-        <img src="imagem/Bolinho Adesivos.jpg" width="305"/>
-        </div>
+        <img src="{% static 'imagem/JetMotos.jpg' %}" width="100"/>
+        <img src="{% static 'imagem/Pirelli.png' %}" width="100"/>
+        <img src="{% static 'imagem/Bolinho Adesivos.jpg' %}" width="200"/>
+        <img src=" {% static 'imagem/Motobras.png' %}" width="100">
+         </div>
         <div>
-        <img src="imagem/Motobras.png" width="200">
+        
         </div>
 
-        <div>
-            <a href="index.html" class ="voltar" >Voltar</a>
-            </div>
+       {% include 'btn_pagina_inicial.html' %}
         
         
 

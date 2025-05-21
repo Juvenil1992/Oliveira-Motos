@@ -1,21 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcule Sua Preparação</title>
-    <link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
-    <script src="script/calculadora.js"></script>
+       
+<link rel="stylesheet" href="{% static 'estilo/estilo.css' %}">
+<script src="{% static 'script/calculadora.js'%}"></script>
+    
 </head>
 
-<body class = "calculadora">
-    
+<body class = "calculadora"> 
     <h1>Calcule Sua Preparação</h1>
-    <div>
-      <a href="index.html" class ="voltar" >Voltar</a>
-    </div>
+{% include 'btn_pagina_inicial.html' %}
+       <div>
+<p>Esta calculadora foi desenvolvida para ajudá-lo a otimizar o desempenho e a velocidade da sua motocicleta, fornecendo dados precisos para ajustes e melhorias na velocidade final ou torque.</p>  
+</div>
     
-   <form oninput="calc_total();">
+   <form class = "calculadora" oninput="calc_total();">
     <div>
          <label for="piorig">Pião Original</label>
         </div>
@@ -58,6 +61,6 @@
         <input type="reset" value="Limpar" class ="resetar"/>
     </div>
    </form>
-<p>Esta calculadora foi desenvolvida para ajudá-lo a otimizar o desempenho e a velocidade da sua motocicleta, fornecendo dados precisos para ajustes e melhorias.</p>  
+
 </body>
 </html>
