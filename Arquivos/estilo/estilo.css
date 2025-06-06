@@ -4,10 +4,10 @@
 /*FORMATAÇÃO DA PAGINA INDEX*/
 
 
-body.home{
+.home{
   
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: #fff;
+background-color: #003366;
+background-image: url(../imagem/Manutenção-da-corrente-de-moto-a-importância-para-o-conjunto-de-transmissão-secundária.jpg);
 }
 
 
@@ -15,11 +15,11 @@ body.home{
 p{
    font-family: Arial, Helvetica, sans-serif;
    font-size: 20px;
-   text-align: left;
+   text-align: center;
    color: #000000;
    background: rgba(255, 255, 255, 0.7);
-   padding: 10px;
-   margin: 10px;
+   padding: 0px;
+   margin: 20px;
    text-indent: 30px;
    border-radius: 8px;
 }
@@ -33,14 +33,13 @@ h1{
     text-align: center;
     text-indent: 30px;
     padding: 20px;
-    height: 40px;
     border-radius: 8px;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 header{
     margin-top: -50px;
     background-color: rgb(9, 65, 139);
-    padding: 20px;
+    padding: 10px;
 
 }
 
@@ -50,9 +49,11 @@ form.calculadora{
     border: solid 2px #000000;
     box-shadow: 4px 4px 4px #000000;
     color: #dedddd;
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: 500px;
     margin:auto;
+    margin-top: 50px ;
+    margin-bottom: 100px;
     border-radius: 8px;
     
 }
@@ -69,7 +70,7 @@ form.calculadora{
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
     transition: 1s;
     display: block;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 10px;
 
     
@@ -81,7 +82,7 @@ form.calculadora{
 
 body.calculadora{
   
-    background-color: #dedddd;
+    background-color: #000000;
     background-image: url(../imagem/Manutenção-da-corrente-de-moto-a-importância-para-o-conjunto-de-transmissão-secundária.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;         /* Faz a imagem cobrir toda a tela */
@@ -91,20 +92,14 @@ body.calculadora{
 
     
 }
-
+.footer-calculadora{
+    color: white;
+    position: relative;
+    bottom: 120px;
+    width: 100%;
+}
 /*FORMATAÇÃO DA PAGINA PASSEIO*/
 
-body.passeio{
-  
-    background-color: #dedddd;
-    background-image: url(../imagem/pngtree-beautiful-woman-riding-a-motorcycle-at-dusk-image_808369.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;         /* Faz a imagem cobrir toda a tela */
-    background-position: center;    /* Centraliza a imagem */
-    height: 100vh;                  /* Garante que o body ocupe a altura da tela */
-    margin: 0;  
-
-}
 
 .tabela-passeio {
   width: 90%;
@@ -136,7 +131,7 @@ body.passeio{
 
 a {
   text-decoration: none;
-  color: #003366;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -179,9 +174,9 @@ form.agendar {
     border: solid 2px #000000;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
     color: #fff;
-    max-width: 500px;
+    max-width: 400px;
     width: 90%;
-    margin: 50px auto;
+    margin:10px auto;
     border-radius: 12px;
     padding: 30px 40px;
     font-family: Arial, sans-serif;
@@ -223,37 +218,28 @@ form.agendar input[type="reset"]:hover {
     background-color: #ddd;
 }
 
-a.voltar {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgb(2, 75, 171);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 6px;
-    text-decoration: none;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-a.voltar:hover {
-    background-color: #004b9a;
-}
 
 
 
-/* Formatação Página Quem Somos */
+/* Formatação Páginas Secundarias */
 
-body.quemsomos{
+body.pagina-secundaria{
   
-    background-color: #dedddd;
+    background-color: #000000;
     background-image: url(../imagem/pngtree-beautiful-woman-riding-a-motorcycle-at-dusk-image_808369.jpg);
     background-repeat: no-repeat;
     background-size: cover;         /* Faz a imagem cobrir toda a tela */
     background-position: center;    /* Centraliza a imagem */
-    height: 100vh;                  /* Garante que o body ocupe a altura da tela */
+    height: 100vh;                   /* Garante que o body ocupe a altura da tela */
     margin: 0;  
 }
 
+.imagens_quem_somos{
+    margin-top: 150px;
+    background-color: rgba(55, 76, 146, 0.5);
+    width: 45%;
+    margin-left: 20px;
+}
 
 
 
@@ -272,25 +258,27 @@ nav#menu ul {
     left:40px;
     
 }
-nav#menu li {
+.navbar-expand-lg {
     display: inline-block;
     background-color: rgb(9, 65, 139);
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
     transition: 1s;
     border: none;
     box-shadow: none;
     border-radius: 8px;
+    width: 100%;
 }
 
-nav#menu h1 {
+.navbar-expand-lg h1 {
     display: none;
 }
-nav#menu a {
+.navbar-expand-lg a {
     color: rgb(251, 246, 246);
     text-decoration: none;
+    padding: 15px;
 }
-nav#menu a:hover{
+.navbar-expand-lg a:hover{
     color: rgb(196, 119, 4);
     text-decoration: none;
 }

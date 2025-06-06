@@ -1,15 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-<link rel="stylesheet" href="{% static 'estilo/estilo.css' %}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encontros</title>
-</head>
-<body class="passeio">
-    {% include 'btn_pagina_inicial.html' %}
+{% extends 'pagina_secundaria.html' %}
+{% block content %}
+    <header id="cabecalho">
     <h1>Agendamento de Econtros</h1>
+    </header>
+    <div>
     <table class="tabela-passeio">
     <thead>
     
@@ -29,27 +23,28 @@
     <tbody>
         {% for l in passeios %}
         <tr>
-            <td>{{l.DataPasseio}}</td>
+            <td>{{ l.DataPasseio|date:"d/m/Y" }}</td>
             <td>{{l.destino}}</td>
             <td>{{l.horarioPartida}}</td>
             <td>{{l.localPartida}}</td>
             <td>{{l.nome}}</td>
             <td>{{l.telefone}}</td>
             <td>{{l.grupoWhats}}</td>
-            <td><a href="{% url 'alterar_passeio' l.id %}">Alterar</a>
-                <a href="{% url 'excluir_passeio' l.id %} " onclick='return excluir()'>Excluir</a>
+            <td><a href="{% url 'alterar_passeio' l.id %}" class="btn btn-primary" >Alterar</a>
+                <a href="{% url 'excluir_passeio' l.id %} " onclick='return excluir()' class="btn btn-secondary" >Excluir</a>
             </td>
         
         </tr>
         {% endfor %}
     </tbody>
     </table>
+    </div>
+    <div>
 <a href="{% url 'incluir_passeios' %}" class="agendar">Agendar Passeio</a>
-
-</body>
+    </div>
 <script>
     function excluir(){
         return confirm("Deseja Excluir?");
     }
 </script>
-</html>
+{% endblock %}

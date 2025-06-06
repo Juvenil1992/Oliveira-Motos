@@ -42,6 +42,7 @@ p{
 
 }
 a.voltar{
+    display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(9, 65, 139);
     padding: 10px;
@@ -51,19 +52,14 @@ a.voltar{
     transition: 1s;
     text-decoration: none;
     border-radius: 8px;
-    position: absolute;
-    margin-top: 10px;
+    margin-left: 10px;
 }
 a.voltar:hover{
-    background-color:  rgb(33, 65, 245);
-    display: inline-block;
     background-color:aqua;
-    text-decoration: underline ;
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s;
-  
-    
 }
+    
 
 p.cadastro{
     color: black;
@@ -71,5 +67,49 @@ p.cadastro{
 p.cadastro:hover{
     color:  rgb(33, 65, 245);
     background-color: rgba(f,f,f,0.5);
+}
+
+/* Formatação do Menu de Navegação */
+
+nav#menu {
+    display: block;
+    margin-top: 30px;
+}
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -15px;
+    left:40px;
+    
+}
+.navbar-expand-lg {
+    display: inline-block;
+    background-color: rgb(9, 65, 139);
+    padding: 20px;
+    margin: 0px;
+    transition: 1s;
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.navbar-expand-lg h1 {
+    display: none;
+}
+.navbar-expand-lg a {
+    color: rgb(251, 246, 246);
+    text-decoration: none;
+    padding: 15px;
+}
+.navbar-expand-lg a:hover{
+    color: rgb(196, 119, 4);
+    text-decoration: none;
+}
+
+header#cabecalho {
+    border-bottom: 5px gray solid;
+    height: 70px;
 }
 

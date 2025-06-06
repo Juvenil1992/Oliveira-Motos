@@ -1,10 +1,19 @@
-    <nav id = menu>
-    <ul type = 1>
-     <li><a href="login.html">Login</a></li>
-     <li><a href="index.html">Carrinho</a></li>
-     <li><a href="https://www.instagram.com/bolinho_adesivos/" target="_blank">Adesivos</a></li>
-     <li><a href="{% url 'listar_passeios' %}">Econtros</a></li>
-     <li><a href="{% url 'calculadora' %}">Calculadora de Transmissão</a></li>
-     <li><a href="{% url 'quem_somos' %}">Quem Somos</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul type = 1 class="navbar-nav">
+                        <li class="nav-item"><a href="{% url 'index' %}">Home Page</a></li>
+                        <li class="nav-item"><a href="{% url 'login_usuario' %}">Login</a></li>
+                        <li class="nav-item"><a href="index.html">Carrinho</a></li>
+                        <li class="nav-item"><a href="https://www.instagram.com/bolinho_adesivos/" target="_blank">Adesivos</a></li>
+                        <li class="nav-item"><a href="{% url 'listar_passeios' %}">Econtros</a></li>
+                        <li class="nav-item"><a href="{% url 'calculadora' %}">Calculadora de Transmissão</a></li>
+                        <li class="nav-item"><a href="{% url 'quem_somos' %}">Quem Somos</a></li>
+                </ul>
+            </div>
+    </div>
     </nav>

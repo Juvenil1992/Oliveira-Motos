@@ -9,7 +9,7 @@ class Cad_Passeios(models.Model):
     localPartida = models.CharField(max_length=100)
     horarioPartida = models.CharField(max_length=5) 
     grupoWhats = models.CharField(max_length=100)
-    DataPasseio = models.CharField(max_length=10, null=True, blank=True)
+    DataPasseio = models.DateField(null=True, blank=True)
     
     def __str__(self):
         return self.nome
